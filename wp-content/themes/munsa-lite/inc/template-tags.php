@@ -20,13 +20,6 @@ function munsa_lite_posted_on() {
 		esc_attr( get_the_date( 'c' ) ),
 		esc_html( get_the_date() )
 	);
-	
-	// Set up byline.
-	printf( '<span class="byline"><span class="entry-author" ' . hybrid_get_attr( 'entry-author' ) . '><span class="screen-reader-text">%1$s </span><a class="entry-author-link" href="%2$s" rel="author" itemprop="url"><span itemprop="name">%3$s</span></a></span></span>',
-		esc_html_x( 'Author', 'Used before post author name.', 'munsa-lite' ),
-		esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ),
-		get_the_author()
-	);
 
 }
 endif;
